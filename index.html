@@ -66,12 +66,19 @@
         fit();
       }).catch(fit);
       window.addEventListener('resize', fit);
-      player.on('play', function () { box.classList.add('is-playing'); });
 
-      // Taglia la fine del video: qualche secondo prima della fine riparte dall'inizio.
-      var TAGLIO_FINALE = 13; // secondi da togliere alla fine
+      // Taglia inizio e fine del video: parte da TAGLIO_INIZIALE e, quando mancano
+      // TAGLIO_FINALE secondi alla fine, torna a TAGLIO_INIZIALE. Il video compare solo
+      // dopo il taglio iniziale, così i primi secondi non si vedono mai.
+      var TAGLIO_INIZIALE = 2; // secondi da togliere all'inizio
+      var TAGLIO_FINALE = 13;  // secondi da togliere alla fine
       player.on('timeupdate', function (t) {
-        if (t.duration && t.seconds >= t.duration - TAGLIO_FINALE) player.setCurrentTime(0);
+        if (t.seconds < TAGLIO_INIZIALE - 0.1 ||
+            (t.duration && t.seconds >= t.duration - TAGLIO_FINALE)) {
+          player.setCurrentTime(TAGLIO_INIZIALE);
+          return;
+        }
+        box.classList.add('is-playing');
       });
     })();
   </script>
