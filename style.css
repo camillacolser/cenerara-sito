@@ -14,12 +14,13 @@ body {
   background: #fff url("assets/sfondo.jpg") center / cover no-repeat fixed;
 }
 
+/* Il riquadro è una colonna a sinistra, alta quanto tutta la finestra. */
 .page {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
   position: relative;
   z-index: 1;
 }
@@ -57,13 +58,17 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 560px;
+  max-width: 520px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  padding: 2.5rem 1.5rem;
+  padding: 3rem 2rem;
   background: rgba(255, 255, 255, .75);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, .25);
+  box-shadow: 10px 0 40px rgba(0, 0, 0, .2);
 }
 
 h1, h2 { font-family: "Marcellus", Georgia, serif; }
@@ -94,7 +99,7 @@ a { color: var(--verde); }
 
 .links { display: flex; justify-content: center; flex-wrap: wrap; gap: .75rem; margin: 0; }
 
-address { font-style: normal; line-height: 1.6; margin-bottom: 1.25rem; }
+address { font-style: normal; line-height: 1.6; margin-bottom: 0; }
 
 .btn {
   display: inline-block;
