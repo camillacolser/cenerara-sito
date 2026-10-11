@@ -46,7 +46,26 @@
     (function () {
       var box = document.querySelector('.bg-video');
       if (!box || !window.Vimeo) return;
-      var player = new Vimeo.Player(box.querySelector('iframe'));
+      var iframe = box.querySelector('iframe');
+      var player = new Vimeo.Player(iframe);
+      var ratio = 16 / 9;
+
+      // Dimensiona l'iframe perché il video copra tutta la finestra.
+      function fit() {
+        var w = window.innerWidth, h = window.innerHeight;
+        var fw = w, fh = w / ratio;
+        if (fh < h) { fh = h; fw = h * ratio; }
+        iframe.style.width = Math.ceil(fw) + 'px';
+        iframe.style.height = Math.ceil(fh) + 'px';
+        iframe.style.minWidth = '0';
+        iframe.style.minHeight = '0';
+      }
+
+      Promise.all([player.getVideoWidth(), player.getVideoHeight()]).then(function (d) {
+        if (d[0] && d[1]) ratio = d[0] / d[1];
+        fit();
+      }).catch(fit);
+      window.addEventListener('resize', fit);
       player.on('play', function () { box.classList.add('is-playing'); });
     })();
   </script>

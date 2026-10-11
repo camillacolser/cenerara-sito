@@ -24,10 +24,13 @@ body {
   overflow: hidden;
 }
 
-/* Il video copre tutta la pagina come una foto "cover" (video 16:9). */
+/* Il video sta fisso a tutto schermo dietro il riquadro; la dimensione dell'iframe
+   la calcola lo script in index.html sulle proporzioni vere del video, così lo
+   riempie come una foto "cover" senza bande ai lati. */
 .bg-video {
-  position: absolute;
+  position: fixed;
   inset: 0;
+  overflow: hidden;
   pointer-events: none;
   opacity: 0;
   transition: opacity 1s ease;
