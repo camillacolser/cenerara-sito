@@ -9,14 +9,14 @@ Sito statico di una pagina pubblicato con GitHub Pages su **www.lacenerara.com**
 
 Ogni modifica pushata su `main` va online da sola in un paio di minuti.
 
-## Da completare
-Cercare `DA COMPLETARE` in `index.html`:
-- descrizione della casa (stanze, posti letto, zona);
-- email e telefono veri (oggi `info@example.com`);
-- CIN da esporre (obbligatorio per gli affitti brevi);
-- foto: metterle in `foto/` (JPG ridotte a ~1600 px di lato) e togliere il commento della
-  galleria; per la copertina sostituire il gradiente in `.hero` di `style.css` con
-  `url("foto/copertina.jpg")`.
+## Pagina provvisoria
+Oggi il sito è una pagina sola con sfondo, contatti, link ad Airbnb, Instagram e Google Maps,
+in attesa del sito completo. La bozza del sito completo è nel branch `bozza-completa`.
+
+- **Foto di sfondo**: caricarla come `foto/sfondo.jpg` (JPG orizzontale, ~2000 px di lato,
+  meno di 500 KB). Non serve toccare il codice: finché il file non c'è resta lo sfondo verde.
+- **Logo**: caricarlo come `logo.png` (o `.svg`) e in `index.html` sostituire il titolo
+  `<h1 class="title">` con la riga indicata nel commento.
 
 ## Attivare GitHub Pages (una volta sola)
 Settings → Pages:
