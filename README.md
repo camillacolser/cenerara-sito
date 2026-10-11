@@ -15,7 +15,7 @@ con contatti, link ad Airbnb, Instagram e
 Google Maps, in attesa del sito completo. La bozza del sito completo è nel branch
 `bozza-completa`.
 
-- **Foto di sfondo**: `assets/sfondo.png`. Per cambiarla, caricare la nuova con lo stesso
+- **Foto di sfondo**: `assets/sfondo.jpg`. Per cambiarla, caricare la nuova con lo stesso
   nome (meglio ridotta a ~2000 px di lato: più è leggera, più la pagina si apre veloce).
 - **Logo**: caricarlo come `logo.png` (o `.svg`) e in `index.html` sostituire il titolo
   `<h1 class="title">` con la riga indicata nel commento.

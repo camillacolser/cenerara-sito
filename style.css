@@ -14,7 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
-  background: #fff url("assets/sfondo.png") center / cover no-repeat;
+  background: #fff url("assets/sfondo.jpg") center / cover no-repeat;
 }
 
 .card {
