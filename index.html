@@ -71,7 +71,7 @@
       // TAGLIO_FINALE secondi alla fine, torna a TAGLIO_INIZIALE. Il video compare solo
       // dopo il taglio iniziale, così i primi secondi non si vedono mai.
       var TAGLIO_INIZIALE = 2; // secondi da togliere all'inizio
-      var TAGLIO_FINALE = 13;  // secondi da togliere alla fine
+      var TAGLIO_FINALE = 14;  // secondi da togliere alla fine
       player.on('timeupdate', function (t) {
         if (t.seconds < TAGLIO_INIZIALE - 0.1 ||
             (t.duration && t.seconds >= t.duration - TAGLIO_FINALE)) {
