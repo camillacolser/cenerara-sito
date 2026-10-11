@@ -1,5 +1,10 @@
 * { box-sizing: border-box; }
 
+:root {
+  --verde: hsla(127.16, 73.63%, 17.84%, 1);
+  --verde-hover: hsla(127.16, 73.63%, 12%, 1);
+}
+
 html, body { margin: 0; height: 100%; }
 
 body {
@@ -34,7 +39,7 @@ body {
   line-height: 1.1;
   margin: 0 0 1rem;
   letter-spacing: .03em;
-  color: #2f3d25;
+  color: var(--verde);
 }
 
 h2 {
@@ -46,7 +51,7 @@ h2 {
   margin: 2.5rem 0 .75rem;
 }
 
-a { color: #2f3d25; }
+a { color: var(--verde); }
 
 .email { font-size: 1.35rem; margin: 0 0 1.25rem; overflow-wrap: anywhere; }
 
@@ -58,11 +63,11 @@ address { font-style: normal; line-height: 1.6; margin-bottom: 1.25rem; }
   display: inline-block;
   padding: .75rem 1.75rem;
   border-radius: 0;
-  background: #4a5d3a;
+  background: var(--verde);
   color: #fff;
   text-decoration: none;
   font-family: system-ui, sans-serif;
   font-size: .95rem;
   letter-spacing: .03em;
 }
-.btn:hover { background: #2f3d25; }
+.btn:hover { background: var(--verde-hover); }
