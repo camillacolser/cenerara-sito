@@ -67,6 +67,12 @@
       }).catch(fit);
       window.addEventListener('resize', fit);
       player.on('play', function () { box.classList.add('is-playing'); });
+
+      // Taglia la fine del video: qualche secondo prima della fine riparte dall'inizio.
+      var TAGLIO_FINALE = 2; // secondi da togliere alla fine
+      player.on('timeupdate', function (t) {
+        if (t.duration && t.seconds >= t.duration - TAGLIO_FINALE) player.setCurrentTime(0);
+      });
     })();
   </script>
 </body>
