@@ -1,51 +1,14 @@
-# Sito della Cenerara
+# La Cenerara
 
-Sito statico di una pagina pubblicato con GitHub Pages su **www.lacenerara.com**
-(`lacenerara.com` reindirizza lì da solo).
+**Per informazioni e prenotazioni**
 
-- `index.html`, `style.css`, `favicon.svg`: il sito; non c'è niente da compilare.
-- `CNAME`: il dominio del sito, serve a GitHub Pages. Non cancellarlo.
-- `.nojekyll`: dice a GitHub di pubblicare i file così come sono.
+- Email: [info@lacenerara.com](mailto:info@lacenerara.com)
+- Airbnb: [airbnb.com/rooms/1041703](https://www.airbnb.com/rooms/1041703)
+- Instagram: [@la_cenerara](https://www.instagram.com/la_cenerara)
 
-Ogni modifica pushata su `main` va online da sola in un paio di minuti.
+**Indirizzo**
 
-## Pagina provvisoria
-Oggi il sito è una pagina sola con la foto della cascina come sfondo e un riquadro bianco
-con contatti, link ad Airbnb, Instagram e
-Google Maps, in attesa del sito completo. La bozza del sito completo è nel branch
-`bozza-completa`.
+Cascina La Cenerara, Velleia  
+29018 Lugagnano Val d'Arda, Piacenza
 
-- **Foto di sfondo**: `assets/sfondo.jpg`. Per cambiarla, caricare la nuova con lo stesso
-  nome (meglio ridotta a ~2000 px di lato: più è leggera, più la pagina si apre veloce).
-- **Logo**: caricarlo come `logo.png` (o `.svg`) e in `index.html` sostituire il titolo
-  `<h1 class="title">` con la riga indicata nel commento.
-
-## Attivare GitHub Pages (una volta sola)
-Settings → Pages:
-1. Source: "Deploy from a branch", branch `main`, cartella `/ (root)`, Save.
-2. Custom domain: `www.lacenerara.com`, Save.
-3. Quando il controllo DNS è verde, spuntare **Enforce HTTPS** (il certificato è gratuito,
-   può volerci fino a un'ora).
-
-## DNS su Squarespace
-Squarespace → Domini → lacenerara.com → DNS:
-
-1. Togliere i record "Squarespace Defaults" (puntano al vecchio sito scaduto).
-   **Non toccare** eventuali record MX/TXT dell'email, se l'email del dominio è in uso.
-2. Aggiungere:
-
-| Host | Tipo  | Dati                     |
-|------|-------|--------------------------|
-| @    | A     | 185.199.108.153          |
-| @    | A     | 185.199.109.153          |
-| @    | A     | 185.199.110.153          |
-| @    | A     | 185.199.111.153          |
-| www  | CNAME | camillacolser.github.io  |
-
-La propagazione richiede da qualche minuto a qualche ora.
-
-Consigliato: impostazioni dell'account GitHub → Pages → **Verified domains**, aggiungere
-`lacenerara.com` e creare su Squarespace il record TXT che GitHub indica: così nessun altro
-può usare il dominio su GitHub Pages.
-
-Costo: 0 € di hosting; resta solo il rinnovo annuale del dominio su Squarespace.
+[Come arrivare (Google Maps)](https://maps.app.goo.gl/HJCrTfA7KNiNPcdK6)
