@@ -27,7 +27,9 @@ body {
   max-width: 560px;
   text-align: center;
   padding: 2.5rem 1.5rem;
-  background: #fff;
+  background: rgba(255, 255, 255, .75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   box-shadow: 0 10px 40px rgba(0, 0, 0, .25);
 }
 
