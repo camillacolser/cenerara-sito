@@ -10,10 +10,13 @@ Sito statico di una pagina pubblicato con GitHub Pages su **www.lacenerara.com**
 Ogni modifica pushata su `main` va online da sola in un paio di minuti.
 
 ## Pagina provvisoria
-Oggi il sito è una pagina sola su sfondo bianco con contatti, link ad Airbnb, Instagram e
+Oggi il sito è una pagina sola con la foto della cascina come sfondo e un riquadro bianco
+con contatti, link ad Airbnb, Instagram e
 Google Maps, in attesa del sito completo. La bozza del sito completo è nel branch
 `bozza-completa`.
 
+- **Foto di sfondo**: `assets/sfondo.png`. Per cambiarla, caricare la nuova con lo stesso
+  nome (meglio ridotta a ~2000 px di lato: più è leggera, più la pagina si apre veloce).
 - **Logo**: caricarlo come `logo.png` (o `.svg`) e in `index.html` sostituire il titolo
   `<h1 class="title">` con la riga indicata nel commento.
 

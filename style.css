@@ -14,12 +14,16 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
+  background: #fff url("assets/sfondo.png") center / cover no-repeat;
 }
 
 .card {
   width: 100%;
   max-width: 560px;
   text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .25);
 }
 
 .logo { max-width: 220px; width: 70%; height: auto; margin-bottom: 1rem; }
